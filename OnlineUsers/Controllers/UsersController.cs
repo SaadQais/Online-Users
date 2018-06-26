@@ -28,9 +28,12 @@ namespace OnlineUsers.Controllers
 
             users.ForEach(user =>
             {
-                if(UsersUtils.AllUsers.Any(u => u.Name == user.UserName))
+                if(UsersUtils.AllUsers != null)
                 {
-                    user.IsOnline = true;
+                    if (UsersUtils.AllUsers.Any(u => u.Name == user.UserName))
+                    {
+                        user.IsOnline = true;
+                    }
                 }
             });
 
