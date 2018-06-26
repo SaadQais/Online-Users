@@ -21,7 +21,7 @@
                 <th scope="row">@user.Id</th>
                 <td>@user.UserName</td>
                 <td>@user.IsOnline</td>
-                <td><a href="#" class="btn btn-default">Manage</a></td>
+                <td><a asp-controller="Manage" asp-action="Index" asp-route-id="@user.Id" class="btn btn-default">Manage</a></td>
             </tr>
         }
     </tbody>
