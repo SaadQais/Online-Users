@@ -1,0 +1,28 @@
+﻿@model IEnumerable<OnlineUsers.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Users</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">IsOnline</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <th scope="row">@user.Id</th>
+                <td>@user.UserName</td>
+                <td>@user.IsOnline</td>
+                <td><a href="#" class="btn btn-default">Manage</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

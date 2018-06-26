@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total Users</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@ViewBag.AllUsersCount Users</h6>
+                <p class="card-text">This is the count of registerd users in current application.</p>
+                <a asp-controller="Users" asp-action="Index" class="card-link">Go to users page</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">Online Users</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@ViewBag.OnlineUsersCount Users</h6>
+                <p class="card-text">This is the count of online users in current application.</p>
+                <a asp-controller="Users" asp-action="Index" class="card-link">Go to users page</a>
+            </div>
+        </div>
+    </div>
+</div>
+
