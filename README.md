@@ -2,4 +2,4 @@
 Display and manage offline and online users in asp.net core
 
 # Screenshots
-![alt text](Screenshots/Untitled.png "Home Page")
+![alt text](OnlineUsers/Screenshots/Untitled.png "Home Page")
